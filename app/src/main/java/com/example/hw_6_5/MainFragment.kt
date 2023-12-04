@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
 import com.example.hw_6_5.databinding.FragmentMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,6 +28,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initClickers()
+        Glide.with(binding.loveImage).load("https://www.logos.com/grow/wp-content/uploads/2023/02/WxW-Love.png").into(binding.loveImage)
     }
 
     private fun initClickers() {

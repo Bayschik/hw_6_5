@@ -10,8 +10,10 @@ import com.example.hw_6_5.R
 import com.example.hw_6_5.data.local.Pref
 import com.example.hw_6_5.databinding.FragmentOnBoardingBinding
 import com.example.hw_6_5.onBoarding.adapter.OnBoardingAdapter
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class OnBoardingFragment : Fragment() {
     @Inject
     lateinit var pref: Pref
@@ -34,6 +36,6 @@ class OnBoardingFragment : Fragment() {
 
     private fun onClick(){
         pref.onShowed()
-        findNavController().navigateUp()
+        findNavController().navigate(R.id.mainFragment)
     }
 }
