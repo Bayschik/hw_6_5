@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">hw_6_5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="love_calculator_tv">Love Calculator</string>
+    <string name="you_tv">You</string>
+    <string name="me_tv">Me</string>
+    <string name="calculate_btn">Calculate</string>
+    <string name="history_btn">History</string>
+</resources>
