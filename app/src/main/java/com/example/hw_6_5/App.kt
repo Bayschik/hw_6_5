@@ -6,7 +6,7 @@ import com.example.hw_6_5.data.room.AppDataBase
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class App :Application(){
+class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -14,7 +14,7 @@ class App :Application(){
             .allowMainThreadQueries().build()
     }
 
-    companion object{
-        lateinit var appDatabase:AppDataBase
+    companion object {
+        lateinit var appDatabase: AppDataBase
     }
 }
